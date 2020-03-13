@@ -15,9 +15,9 @@ int main(){
   cp_b = fork();
 	int status;
 
-  if (cp_a > 0 && cp_b == 0){execl("/bin/unzip","unzip","-o","jpg.zip",NULL);}
+  if (cp_b == 0 && cp_a > 0){execl("/bin/unzip","unzip","-o","jpg.zip",NULL);}
 
-  else if (cp_a == 0 && cp_b > 0){
+  else if (cp_b > 0 && cp_a == 0){
   	while ((wait(&status)) > 0);
   	if (ch_id == 0){execl("/bin/mkdir","mkdir","-p","indomie",NULL);}
 
@@ -27,7 +27,7 @@ int main(){
   	  	execl("/bin/mkdir","mkdir","-p","sedaap",NULL);
   	   }
   	}
-	else if (cp_a > 0 && cp_b > 0){
+	else if (cp_b > 0 && cp_a > 0){
 		while ((wait(&status)) > 0);
 		DIR *loc;
 		struct dirent *directory;
