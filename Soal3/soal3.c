@@ -6,11 +6,7 @@
 #include <wait.h>
 #include <dirent.h>
 
-int cekfolder(const char *path){
-  struct stat pathDir;
-  stat(path, &pathDir);
-  return S_ISDIR(pathDir.st_mode);
-}
+int cekfolder(const char *path){struct stat pathDir;stat(path, &pathDir);return S_ISDIR(pathDir.st_mode);}
 
 int main(){
 	pid_t ch_id,cp_a,cp_b;
