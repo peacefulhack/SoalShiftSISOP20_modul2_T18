@@ -13,8 +13,7 @@ int cekfolder(const char *path){
 }
 
 int main(){
-	pid_t ch_id;
-	int cp_a,cp_b;
+	pid_t ch_id,cp_a,cp_b;
   ch_id = fork();
   cp_a = fork();
   cp_b = fork();
