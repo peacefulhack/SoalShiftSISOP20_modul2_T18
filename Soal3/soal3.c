@@ -39,14 +39,14 @@ int main(){
 		          continue;
 		        if(cekfolder(directory->d_name)){
 		          if(fork() == 0){
-		            char folder[1000];
+		            char folder[400];
 		            sprintf(folder,"jpg/%s",directory->d_name);
 			          execl("/bin/mv","mv",folder,"indomie", NULL);
               }else{
                 while ((wait(&status)) > 0);
                 if(fork() == 0){
               	  if(fork() == 0){
-              	    char input[1000];
+              	    char input[400];
               	    FILE *file_coba1;
   		        	    sprintf(input,"/home/peacefulhack/Documents/Sistem Operasi/modul 2/SoalShiftSISOP20_modul2_T18/Soal3/indomie/%s/coba1.txt",directory->d_name);
   		        	    file_coba1 = fopen(input, "w");
@@ -54,7 +54,7 @@ int main(){
 		              }else{
 		                while ((wait(&status)) > 0);
     		            sleep(3);
-    		            char input2[1000];
+    		            char input2[400];
     		            FILE *file_coba2;
     		            sprintf(input2,"/home/peacefulhack/Documents/Sistem Operasi/modul 2/SoalShiftSISOP20_modul2_T18/Soal3/indomie/%s/coba2.txt",directory->d_name);
     		            file_coba2 = fopen(input2, "w");
