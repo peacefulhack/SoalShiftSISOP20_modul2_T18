@@ -55,7 +55,7 @@ Kesulitan menentukan bagaimana melakukan fork pada berbagai proses yang banyak d
 Dalam soal nomor 3 diperlukan program yang berjalan secara bersamaan atau disebut multiprocessing. Membuat dua direktori, lalu setelah direktori pertama selesai dan lima detik kemudian dibuat direktori kedua. Lalu dalam zip mengeskrak file .jpg. dan semua esktrakan harus dipindahkan ke folder satu. Dan direktori ke folder direktori yang lain. Lalu setiap direktori yang dipindahkan dibuat dua folder teks kosong dengan ekstensi .txt.
 
 <h2>2. Penyelesaian</h2>
-<img src="Soal2/Screen Shot 2020-03-21 at 11.05.54.png">
+<img src="Soal3/Screen Shot 2020-03-21 at 11.05.54.png">
 <p>cekfolder di atas digunakan untuk menentukan apakah direktori yang dibuat sudah sesuai atau benar. Lalu dibuat tiga proses dengan fork(). Pada proses ch_a dilakukan unzip atau ekstrak jpg dari file zip yang ada. Pada proses ch_b dibuat direktori baru bernama indomi. Lalu jika kedua proses tersebut selesai maka dibuat direktori sedap. </p>
 
 <img src="Soal3/Screen Shot 2020-03-21 at 11.06.06.png">
