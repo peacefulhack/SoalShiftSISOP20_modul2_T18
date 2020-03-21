@@ -29,11 +29,7 @@ Program soal nomer 2 diharuskan untuk membuat folder khusus dan membuat folder b
 <img src="Soal2/ss 2020-03-21 at 10.31.02.png">
 fungsi sighanldr untuk menerima sinyal handler lalu, dibuat sebanyak 7 pid_t untuk menjalankan proses yang berbeda beda. lalu dibuat time_t untuk mendapatkan waktu saat ini, dan char tanggal untuk menyimpan waktu saat ini.
 <img src="Soal2/ss 2020-03-21 at 10.31.09.png">
-Lalu dijalankan command chdir untuk mengubah working directory menjadi 
-
-```
-/home/peacefulhack/Documents/Sistem Operasi/modul 2/SoalShiftSISOP20_modul2_T18/Soal2/
-```
+Lalu dijalankan command chdir untuk mengubah working directory menjadi /home/peacefulhack/Documents/Sistem Operasi/modul 2/SoalShiftSISOP20_modul2_T18/Soal2/
 
 <img src="Soal2/ss 2020-03-21 at 10.31.31.png">
 Lalu dibuat proses killer untuk mematikan proses menggunakan SIGKILL sehingga menterminasi semua proses.
