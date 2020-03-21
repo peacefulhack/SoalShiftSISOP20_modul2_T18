@@ -9,21 +9,10 @@ disusun oleh: M. Mikail Dwi Khusnanda (028) & Ghifari Akbar R (040)
 <p>Dalam memuat program yang menyerupai crontab tetapi berupa script bash diperlukan berbagai metode. saat ini akan dilakukan metode daemon yaitu background process yang berjalan menggunakan script bash.
 
 <h2>2. Penyelesaian</h2>
-<img src="dokumentasi/dokum1.png">
+<img src="Soal1/Screen Shot 2020-03-21 at 10.10.24.png">
 <p>pertama diperlukan time_t dan struct localtime untuk mengambil waktu yang dibutuhkan saat ini. Lalu menggunakan template daemon dilakukan fork pada child process dan dibandingkan argumen yang diberi untuk menentukan apakah format detik, menit, atau jam salah.
 dengan cara menjumlahkan profit dari region yang sama, lalu membandingkan sampai dapat region dengan keuntungan paling sedikit.
-
-```
-a = a + row 21(profit)
-```
-sebenarnya bisa menggunakan a+=row 21, namun agar mudah dimengerti, kami lebih memilih cara bisasa, yaitu a = a+ row 21<br>Pada bagian end, kami menggunakan pendeteksi biasa, jika central kurang dari west south dan east maka print central, dan seterusnya.</p>
-
-```
-FPAT='([^,]+)|("[^"]+")
-```
-<p>digunakan ketika kita memerlukan separator dengan kondisi, disini kita menggunakan separator "," namun tanda koma didalam petik, tidak sebagai separator melainkan sebuah nama satu kesatuan, maka kita tulis seperti diatas. yang terakhir adalah setelah ditulis semua, jangan lupa menuliskan dataset yang akan kita ambil, disini contohnya adalah Sample-Superstore.csv</p>
-
-<img src="dokumentasi/dokum2.png">
+</p>
 
 <h2>Kesulitan</h2>
 Kesulitan paling terlihat pada membuat algoritma untuk membandingkan format detik, menit, dan jam. Menentukan mana yang salah dan mana yang sesuai. Karena template daemon sudah tersedia maka membuat daemon tidak terlalu menyulitkan.
