@@ -3,7 +3,7 @@ disusun oleh: M. Mikail Dwi Khusnanda (028) & Ghifari Akbar R (040)
 
 
 
-# Soal Nomer 1a
+# Soal Nomer 1
 
 <h2>1. Penjelasan</h2>
 <p>Dalam memuat program yang menyerupai crontab tetapi berupa script bash diperlukan berbagai metode. saat ini akan dilakukan metode daemon yaitu background process yang berjalan menggunakan script bash.
@@ -21,22 +21,28 @@ dengan cara menjumlahkan profit dari region yang sama, lalu membandingkan sampai
 <h2>Kesulitan</h2>
 Kesulitan paling terlihat pada membuat algoritma untuk membandingkan format detik, menit, dan jam. Menentukan mana yang salah dan mana yang sesuai. Karena template daemon sudah tersedia maka membuat daemon tidak terlalu menyulitkan.
 
-# Soal Nomor 1b
+# Soal Nomor 2
 <h2>1. Penjelasan</h2>
-pada poin b, menampilkan 2 negara bagian (state) yang memiliki keuntungan (profit) paling sedikit berdasarkan hasil poin a dimana sudah diketahui poin a hasilnya adalah central, lalu kita harus mencari, disini, karena saya belum mendalami, saya menggunakan cara manual biasa, dengan menginputkan negara bagian yang memiliki region central. dan menghitung seperti poin a.
+Program soal nomer 2 diharuskan untuk membuat folder khusus dan membuat folder baru setiap 30 detik dengan nama timestamp. Lalu setiap folder yang baru dibuat setiap 30 detik itu mendownload sebanyak 20 gambar dari url https://picsum.photos setiap 5 detik dengan ukuran tertentu. Setelah semua didownload maka folder akan dizip. Lalu dibuat program untuk menterminasi semua proses tersebut, setelah menterminasi program tersebut akan mendelte dirinya sendiri.
 
 <h2>2. Penyelesaian</h2>
-<img src="dokumentasi/dokum3.png">
-pertama, sama seperti poin a, dimana begin saya gunakan untuk deklarasi variable, lalu pada main nya, saya isi dengan matching value tiap negara bagian, lalu penambahan yang sama dengan poin a, dan pada end, dilakukan perkondisian dimana jika kurang dari "satu" dimana satu adalah nilai terkecil, dan dua adalah nilai terkecil kedua, dan nsatu adalah nama nilai terkecil, dan ndua adalah nama nilai terkecil kedua.
-pada if jika nilai lebih kecil dari nilai yang sudah ada pada satu, maka dua = satu dan satu = nilainya, dan sama pula untuk nama tiap variable nya.
-lalu prinf pertama untuk saya mengecek, prinf kedua untuk nilai pasti terkecilnya
-<img src="dokumentasi/dokum4.png">
-hasilnya:
+<img src="Soal2/ss 2020-03-21 at 10.31.02.png">
+fungsi sighanldr untuk menerima sinyal handler lalu, dibuat sebanyak 7 pid_t untuk menjalankan proses yang berbeda beda. lalu dibuat time_t untuk mendapatkan waktu saat ini, dan char tanggal untuk menyimpan waktu saat ini.
+<img src="Soal2/ss 2020-03-21 at 10.31.09.png">
+Lalu dijalankan command chdir untuk mengubah working directory menjadi 
 
 ```
-terkecil pertama adalah Texas berjumlah -24798
-kedua adalah Illinois berjumlah -11559
+/home/peacefulhack/Documents/Sistem Operasi/modul 2/SoalShiftSISOP20_modul2_T18/Soal2/
 ```
+
+<img src="Soal2/ss 2020-03-21 at 10.31.31.png">
+Lalu dibuat proses killer untuk mematikan proses menggunakan SIGKILL sehingga menterminasi semua proses.
+
+<img src="Soal2/ss 2020-03-21 at 10.31.39.png">
+
+Lalu menggunakan curl didownload gambar dari url https://picsum.photos setiap 5 detik. pertama mengammbil waktu saat ini meggunakan strftime dan menyimpan waktu tersebut dalam struct info.
+
+
 <h2>Kesulitan</h2>
 dari script saya sendiri paham bahwa script saya tidak efektif, tidak responsif dan rawan error.
 
