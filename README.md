@@ -14,6 +14,10 @@ disusun oleh: M. Mikail Dwi Khusnanda (028) & Ghifari Akbar R (040)
 dengan cara menjumlahkan profit dari region yang sama, lalu membandingkan sampai dapat region dengan keuntungan paling sedikit.
 </p>
 
+<img src="Soal1/Screen Shot 2020-03-21 at 10.10.37.png">
+
+<img src="Soal1/Screen Shot 2020-03-21 at 10.10.46.png">
+
 <h2>Kesulitan</h2>
 Kesulitan paling terlihat pada membuat algoritma untuk membandingkan format detik, menit, dan jam. Menentukan mana yang salah dan mana yang sesuai. Karena template daemon sudah tersedia maka membuat daemon tidak terlalu menyulitkan.
 
