@@ -52,16 +52,16 @@ Kesulitan menentukan bagaimana melakukan fork pada berbagai proses yang banyak d
 
 # Soal Nomor 3
 <h2>1. Penjelasan</h2>
-dalam soal 1c, menampilkan 10 produk (product name) yang memiliki keuntungan (profit) paling sedikit berdasarkan 2 negara bagian (state) hasil poin b, dimana hasil poin b adalah Texas dan Ilinois, menggunakan cara yang lebih sederhana namun lebih kompleks hehe~, dengan menggunakan array, sort dan head untuk membatasi output, tanpa mendeklarasikan variable.
+Dalam soal nomor 3 diperlukan program yang berjalan secara bersamaan atau disebut multiprocessing. Membuat dua direktori, lalu setelah direktori pertama selesai dan lima detik kemudian dibuat direktori kedua. Lalu dalam zip mengeskrak file .jpg. dan semua esktrakan harus dipindahkan ke folder satu. Dan direktori ke folder direktori yang lain. Lalu setiap direktori yang dipindahkan dibuat dua folder teks kosong dengan ekstensi .txt.
 
 <h2>2. Penyelesaian</h2>
-<img src="dokumentasi/dokum7.png">
-dalam script diatas, menggunakan if yang sama seperti nomor 1b, dengan kondisi "atau", dan di END, menggunakan for untuk print angka dulu baru nama, lalu kita pipe dengan sort lalu pipe lagi dengan head, sort -g adalah sorting bilangan, jika tidak ada, maka minus dan tidak menjadi satu (1,-1,-1,2,3,-3...) yang harusnya (-3,-1,-1,1,2,3..) dan "head -n" n disini adalah line nya, berapa jumlah line dari head yang akan ditampilkan, karena dibutuhkan 10, maka head -n 10
+<img src="Soal2/Screen Shot 2020-03-21 at 11.05.54.png">
+<p>cekfolder di atas digunakan untuk menentukan apakah direktori yang dibuat sudah sesuai atau benar. Lalu dibuat tiga proses dengan fork(). Pada proses ch_a dilakukan unzip atau ekstrak jpg dari file zip yang ada. Pada proses ch_b dibuat direktori baru bernama indomi. Lalu jika kedua proses tersebut selesai maka dibuat direktori sedap. </p>
 
-<img src="dokumentasi/dokum8.png">
+<img src="Soal3/Screen Shot 2020-03-21 at 11.06.06.png">
+<img src="Soal3/Screen Shot 2020-03-21 at 11.06.11.png">
+<p> Lalu membuat .txt dari kedua direktori tersebut. dan mengakhiri program</p>
 
 <h2>Kesulitan</h2>
--
-<h2>Source</h2>
-https://superuser.com/questions/264442/how-do-i-limit-the-number-of-displayed-lines-through-ls
+Menentukan command yang sesuai untuk membuat file txt dan mengekstrak file. 
 
